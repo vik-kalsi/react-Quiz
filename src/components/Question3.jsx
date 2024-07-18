@@ -1,5 +1,5 @@
 
-function Question3() {
+function Question3({ correctAnswer, wrongAnswer }) {
     
 
     return (
@@ -10,10 +10,10 @@ function Question3() {
             </div>
 
             <div className="grid space-y-6 mt-8 text-3xl">
-                <button className="border-2 p-2 transition hover:scale-105"> Portugal </button>
-                <button className="border-2 p-2 transition hover:scale-105"> France </button>
-                <button className="border-2 p-2 transition hover:scale-105"> Greece </button>
-                <button className="border-2 p-2 transition hover:scale-105"> Spain </button>
+                <button className="border-2 p-2 transition hover:scale-105" onClick={wrongAnswer}> Portugal </button>
+                <button className="border-2 p-2 transition hover:scale-105" onClick={wrongAnswer}> France </button>
+                <button className="border-2 p-2 transition hover:scale-105" onClick={wrongAnswer}> Greece </button>
+                <button className="border-2 p-2 transition hover:scale-105" onClick={correctAnswer}> Spain </button>
             </div>
         </>
     )
